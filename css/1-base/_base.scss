@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  word-wrap: break-word;
+  font-size: 62.5%;
+}
+body {
+  font-size: 100%;
+  font-family: 'Open Sans', 'Kosugi Maru', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  color: $gray;
+  letter-spacing: 0.2rem;
+}
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+}
