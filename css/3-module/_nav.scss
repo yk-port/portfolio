@@ -1,0 +1,24 @@
+#nav {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  .menu {
+    text-align: right;
+    &__item {
+      display: inline-block;
+      margin: 16px 40px;
+      font-size: 2rem;
+      transition: .2s all cubic-bezier(.8,0,.3,1) 0s;
+      transform-origin: right center;
+      color: $gray;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.5);
+        backface-visibility: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    }
+  }
+}
