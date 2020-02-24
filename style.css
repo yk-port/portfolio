@@ -160,6 +160,196 @@ body .container {
 /*————————————————
   4-page
 ————————————————*/
+#profile .border {
+  width: 100%;
+  height: 100%;
+}
+
+#profile .border__top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 5px;
+  background: -moz-linear-gradient(left, #364D6A 90%, #202037);
+  background: -webkit-linear-gradient(left, #364D6A 90%, #202037);
+  background: linear-gradient(to right, #364D6A 90%, #202037);
+}
+
+#profile .border__right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 5px;
+  height: 100%;
+  background: -moz-linear-gradient(top, #202037 10%, #364D6A);
+  background: -webkit-linear-gradient(top, #202037 10%, #364D6A);
+  background: linear-gradient(to bottom, #202037 10%, #364D6A);
+}
+
+#profile .border__bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  height: 5px;
+  background: -moz-linear-gradient(right, #364D6A 50%, #1d5292);
+  background: -webkit-linear-gradient(right, #364D6A 50%, #1d5292);
+  background: linear-gradient(to left, #364D6A 50%, #1d5292);
+}
+
+#profile .border__left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 5px;
+  height: 100%;
+  background: -moz-linear-gradient(bottom, #1d5292 50%, #364D6A);
+  background: -webkit-linear-gradient(bottom, #1d5292 50%, #364D6A);
+  background: linear-gradient(to top, #1d5292 50%, #364D6A);
+}
+
+#profile .profile__title {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+#profile .profile .chronology {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  width: 50%;
+  height: 32px;
+}
+
+#profile .profile .chronology__line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #4a4a4a;
+}
+
+#profile .profile .chronology__nav {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#profile .profile .chronology__list {
+  position: relative;
+}
+
+#profile .profile .chronology__list::before {
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  font-size: 1rem;
+}
+
+#profile .profile .chronology__list:nth-of-type(1)::before {
+  content: '1985~';
+}
+
+#profile .profile .chronology__list:nth-of-type(1) i:hover::after {
+  content: '学生時代';
+}
+
+#profile .profile .chronology__list:nth-of-type(2)::before {
+  content: '2008~';
+}
+
+#profile .profile .chronology__list:nth-of-type(2) i:hover::after {
+  content: '営業マン時代';
+}
+
+#profile .profile .chronology__list:nth-of-type(3)::before {
+  content: '2013~';
+}
+
+#profile .profile .chronology__list:nth-of-type(3) i:hover::after {
+  content: 'バリスタ時代';
+}
+
+#profile .profile .chronology__list:nth-of-type(4)::before {
+  content: '2015~';
+}
+
+#profile .profile .chronology__list:nth-of-type(4) i:hover::after {
+  content: 'グルメ広告媒体コンサル時代';
+}
+
+#profile .profile .chronology__list:nth-of-type(5)::before {
+  content: '2017~';
+}
+
+#profile .profile .chronology__list:nth-of-type(5) i:hover::after {
+  content: '教育系ITベンチャー時代';
+}
+
+#profile .profile .chronology__list:nth-of-type(6)::before {
+  content: '2019~';
+}
+
+#profile .profile .chronology__list:nth-of-type(6) i:hover::after {
+  content: 'フリーランス時代';
+}
+
+#profile .profile .chronology__list:nth-of-type(7)::before {
+  content: 'future';
+}
+
+#profile .profile .chronology__list:nth-of-type(7) i:hover::after {
+  content: 'これから';
+}
+
+#profile .profile .chronology__list i {
+  position: relative;
+  color: #4a4a4a;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#profile .profile .chronology__list i:hover {
+  color: #364D6A;
+  transition: all 0.2s;
+  transform: scale(1.2);
+}
+
+#profile .profile .chronology__list i:hover::after {
+  position: absolute;
+  top: 24px;
+  left: 16px;
+  font-size: 1.2rem;
+  width: 200px;
+}
+
+#profile .profile__body {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0, -50%);
+  width: 70%;
+  height: 180px;
+  border: 1px solid black;
+}
+
+#profile .profile__contact {
+  position: absolute;
+  top: calc(50% + 160px);
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
 #top .border {
   width: 100%;
   height: 100%;
