@@ -1,15 +1,8 @@
-.profile {
+.skill {
   &__title {
     position: absolute;
     top: 20%;
     left: 10%;
-  }
-  &__chronology {
-    position: absolute;
-    top: 20%;
-    left: 30%;
-    width: 50%;
-    height: 32px;
   }
   &__body {
     position: absolute;
@@ -18,7 +11,7 @@
     transform: translate(0, -50%);
     width: 70%;
     height: 180px;
-    border: 1px solid black;
+    overflow-y: scroll;
   }
   &__contact {
     position: absolute;

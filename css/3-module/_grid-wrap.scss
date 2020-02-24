@@ -1,0 +1,31 @@
+.grid-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  &__content {
+    padding: 16px;
+    text-align: center;
+  }
+  &__icon {
+    margin-bottom: 16px;
+    i {
+      color: $middle-blue;
+      background: -webkit-linear-gradient(45deg, $light-blue, $middle-blue);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &__title {
+    margin-bottom: 16px;
+  }
+  &__text {
+    font-size: 1.4rem;
+    line-height: 1.4em;
+    a {
+      color: $gray;
+      transition: opacity 0.2;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
