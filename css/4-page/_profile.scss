@@ -1,178 +1,29 @@
-#profile {
-  .border {
-    width: 100%;
-    height: 100%;
-    &__top {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-      width: 100%;
-      height: 5px;
-      background: -moz-linear-gradient(left, $middle-blue 90%, $dark-blue);
-      background: -webkit-linear-gradient(left, $middle-blue 90%, $dark-blue);
-      background: linear-gradient(to right, $middle-blue 90%, $dark-blue);
-    }
-    &__right {
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 1;
-      width: 5px;
-      height: 100%;
-      background: -moz-linear-gradient(top, $dark-blue 10%, $middle-blue);
-      background: -webkit-linear-gradient(top, $dark-blue 10%, $middle-blue);
-      background: linear-gradient(to bottom, $dark-blue 10%, $middle-blue);
-    }
-    &__bottom {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      z-index: 1;
-      width: 100%;
-      height: 5px;
-      background: -moz-linear-gradient(right, $middle-blue 50%, $light-blue);
-      background: -webkit-linear-gradient(right, $middle-blue 50%, $light-blue);
-      background: linear-gradient(to left, $middle-blue 50%, $light-blue);
-    }
-    &__left {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      z-index: 1;
-      width: 5px;
-      height: 100%;
-      background: -moz-linear-gradient(bottom, $light-blue 50%, $middle-blue);
-      background: -webkit-linear-gradient(bottom, $light-blue 50%, $middle-blue);
-      background: linear-gradient(to top, $light-blue 50%, $middle-blue);
-    }
+.profile {
+  &__title {
+    position: absolute;
+    top: 20%;
+    left: 10%;
   }
-  .profile {
-    &__title {
-      position: absolute;
-      top: 20%;
-      left: 10%;
-    }
-    .chronology {
-      position: absolute;
-      top: 20%;
-      left: 30%;
-      width: 50%;
-      height: 32px;
-      &__line {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 100%;
-        height: 1px;
-        background: $gray;
-      }
-      &__nav {
-        width: 95%;
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      &__list {
-        position: relative;
-        &::before {
-          display: inline-block;
-          position: absolute;
-          top: -20px;
-          left: -10px;
-          font-size: 1rem;
-        }
-        &:nth-of-type(1) {
-          &::before {
-            content: '1985~';
-          }
-          i:hover::after {
-            content: '学生時代';
-          }
-        }
-        &:nth-of-type(2) {
-          &::before {
-            content: '2008~';
-          }
-          i:hover::after {
-            content: '営業マン時代';
-          }
-        }
-        &:nth-of-type(3) {
-          &::before {
-            content: '2013~';
-          }
-          i:hover::after {
-            content: 'バリスタ時代';
-          }
-        }
-        &:nth-of-type(4) {
-          &::before {
-            content: '2015~';
-          }
-          i:hover::after {
-            content: 'グルメ広告媒体コンサル時代';
-          }
-        }
-        &:nth-of-type(5) {
-          &::before {
-            content: '2017~';
-          }
-          i:hover::after {
-            content: '教育系ITベンチャー時代';
-          }
-        }
-        &:nth-of-type(6) {
-          &::before {
-            content: '2019~';
-          }
-          i:hover::after {
-            content: 'フリーランス時代';
-          }
-        }
-        &:nth-of-type(7) {
-          &::before {
-            content: 'future';
-          }
-          i:hover::after {
-            content: 'これから';
-          }
-        }
-        i {
-          position: relative;
-          color: $gray;
-          cursor: pointer;
-          transition: all 0.2s;
-          &:hover {
-            color: $middle-blue;
-            transition: all 0.2s;
-            transform: scale(1.2);
-          }
-          &:hover::after {
-            position: absolute;
-            top: 24px;
-            left: 16px;
-            font-size: 1.2rem;
-            width: 200px;
-          }
-        }
-      }
-    }
-    &__body {
-      position: absolute;
-      top: 50%;
-      left: 10%;
-      transform: translate(0, -50%);
-      width: 70%;
-      height: 180px;
-      border: 1px solid black;
-    }
-    &__contact {
-      position: absolute;
-      top: calc(50% + 160px);
-      left: 50%;
-      transform: translate(-50%, 0);
-    }
+  .profile__chronology {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 50%;
+    height: 32px;
+  }
+  &__body {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+    width: 70%;
+    height: 180px;
+    border: 1px solid black;
+  }
+  &__contact {
+    position: absolute;
+    top: calc(50% + 160px);
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 }
