@@ -1,0 +1,59 @@
+// 非表示から表示のアニメーション
+@keyframes DelayFadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+// TOPのborder枠のアニメーション
+@keyframes topAnimation {
+  0% { left: -100%; }
+  100% { left: 0%; }
+}
+@keyframes rightAnimation {
+  0% { top: -200% }
+  100% { top: 0%; }
+}
+@keyframes bottomAnimation {
+  0% { right: -300% }
+  100% { right: 0% }
+}
+@keyframes leftAnimation {
+  0% { bottom: -400% }
+  100% { bottom: 0% }
+}
+
+// TOPのタイトルのアニメーション
+@keyframes fadeInMoveUp {
+  0% { opacity: 0; }
+  70% { opacity: 1; }
+  95% { top: 50%; }
+  100% { top: 20%; }
+}
+
+// btnが輝くアニメーション
+@keyframes shiny {
+  0% {
+    transform: scale(0) rotate(25deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1) rotate(25deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(50) rotate(25deg);
+    opacity: 0;
+  }
+}
+
+// ページ遷移の時のアニメーション
+@keyframes page-transition-close {
+  0% { width: 0; }
+  100% { width: calc(100% - 10px); }
+}
+@keyframes page-transition-open {
+  0% { width: calc(100% - 10px); }
+  100% {
+    width: 0%;
+  }
+}

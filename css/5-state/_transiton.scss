@@ -1,0 +1,31 @@
+#contents-body.is-transition-close {
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 10;
+    width: 0%;
+    height: calc(100% - 10px);
+    background: #fff;
+    animation: page-transition-close 0.4s cubic-bezier(1,0,0,1) 0.1s;
+    animation-fill-mode: forwards;
+  }
+}
+
+#contents-body.is-transition-open {
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 10;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background: #fff;
+    animation: page-transition-open 0.4s cubic-bezier(1,0,0,1) 0.1s;
+    animation-fill-mode: forwards;
+  }
+}

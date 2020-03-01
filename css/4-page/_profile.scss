@@ -3,6 +3,7 @@
     position: absolute;
     top: 20%;
     left: 10%;
+    cursor: pointer;
   }
   &__chronology {
     position: absolute;
@@ -18,7 +19,6 @@
     transform: translate(0, -50%);
     width: 70%;
     height: 180px;
-    border: 1px solid black;
   }
   &__contact {
     position: absolute;

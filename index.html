@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>LitGraphic - portfolio | TOP</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -16,39 +18,38 @@
         <div class="border__right"></div>
         <div class="border__bottom"></div>
         <div class="border__left"></div>
-      </div>
+      </div><!-- END border -->
       <nav id="nav">
         <ul class="menu">
-          <li class="menu__list"><a href="" class="menu__item">Top</a></li>
-          <li class="menu__list"><a href="" class="menu__item">Profile</a></li>
-          <li class="menu__list"><a href="" class="menu__item">Skill</a></li>
+          <li class="menu__list"><a href="index.html" class="menu__item">Top</a></li>
+          <li class="menu__list"><a href="profile/index.html" class="menu__item">Profile</a></li>
+          <li class="menu__list"><a href="skill/index.html" class="menu__item">Skill</a></li>
           <li class="menu__list"><a href="" class="menu__item">Blog</a></li>
         </ul>
-      </nav>
-      <div class="top">
-        <div class="top__title">
-          <h1 class="heading">welcome</h1>
-        </div>
-        <div class="top__content">
-          <p class="top__description">
-            <span>このページにご訪問いただき</span><br>
-            <span>ありがとうございます！</span><br>
-            <span>今までの経歴や実績</span><br>
-            <span>今後どうなっていきたいかなど</span><br>
-            <span>私自身の知ってもらい</span><br>
-            <span>興味を持っていただければ</span><br>
-            <span>とても嬉しく思います！</span><br>
-            <span>どうぞよろしくお願い致します！！</span>
-          </p>
-          <img src="" alt="本人画像" class="top__image">
-        </div>
-        <div class="top__contact">
+      </nav><!-- END nav -->
+      <div id="contents-body">
+        <section class="top" id="top">
+          <div class="top__title">
+            <h1 class="heading">welcome</h1>
+          </div><!-- END top__title -->
+          <div class="top__content">
+            <p class="top__description">
+              <span>ご訪問ありがとうございます！</span><br>
+              <span class="top__description--emphasis">5分で自分を知ってもらう</span><br>
+              <span>をコンセプトにこのサイトを</span><br>
+              <span>作成しました。</span><br>
+              <span>興味を持っていただければ</span><br>
+              <span>とても嬉しく思います！</span><br>
+              <span>よろしくお願い致します！</span>
+            </p>
+            <div class="top__image"></div>
+          </div><!-- END top__content -->
           <div id="contact-btn">
             <label for="contact-modal">話を聞いてみたい</label>
             <input type="checkbox" id="contact-modal">
-          </div>
-        </div>
-      </div>
+          </div><!-- END contact-btn -->
+        </section><!-- END top -->
+      </div><!-- END contents-body -->
     </div>
   </div>
 </body>

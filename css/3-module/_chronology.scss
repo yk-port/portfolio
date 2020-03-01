@@ -10,7 +10,7 @@
     background: $gray;
   }
   &__nav {
-    width: 95%;
+    width: 90%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -73,14 +73,6 @@
         content: 'フリーランス時代';
       }
     }
-    &:nth-of-type(7) {
-      &::before {
-        content: 'future';
-      }
-      i:hover::after {
-        content: 'これから';
-      }
-    }
     i {
       position: relative;
       color: $gray;
@@ -97,6 +89,8 @@
         left: 16px;
         font-size: 1.2rem;
         width: 200px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }
     }
   }
