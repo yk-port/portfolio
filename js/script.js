@@ -10,16 +10,11 @@ $(function() {
   });
 
   // profileページの項目選択時の制御
-  $('.profile__title, ul.chronology__nav li').on('click', function() {
-    let selectedId = $(this).attr('id');
+  $('#tab .label').on('click', function() {
+    $('#tab .is-selected').removeClass('is-selected');
+    $(this).addClass('is-selected');
     $('#profile-contents .is-show').removeClass('is-show');
-    $('#profile-contents > div').each(function(content) {
-      console.log($(content));
-
-      if ( selectedId === $(content).data('profile')) {
-        
-        content.addClass('is-show');
-      }
-    });
+    const index = $(this).index();
+    $('#profile-contents .panel').eq(index).addClass('is-show');
   });
 });

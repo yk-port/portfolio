@@ -29,75 +29,46 @@
       </nav><!-- END nav -->
       <div id="contents-body" class="is-transition-open">
         <section class="profile">
-          <div class="profile__title" id="main-profile">
+          <div class="profile__title">
             <h1 class="heading">profile</h1>
           </div><!-- END profile__title -->
           <div class="profile__chronology">
             <div class="chronology">
               <div class="chronology__line"></div>
-              <ul class="chronology__nav">
-                <li class="chronology__list" id="profile-1"><i class="fas fa-circle fa-lg"></i></li>
-                <li class="chronology__list" id="profile-2"><i class="fas fa-circle fa-lg"></i></li>
-                <li class="chronology__list" id="profile-3"><i class="fas fa-circle fa-lg"></i></li>
-                <li class="chronology__list" id="profile-4"><i class="fas fa-circle fa-lg"></i></li>
-                <li class="chronology__list" id="profile-5"><i class="fas fa-circle fa-lg"></i></li>
-                <li class="chronology__list" id="profile-6"><i class="fas fa-circle fa-lg"></i></li>
+              <ul class="chronology__nav" id="tab">
+                <li class="chronology__list label is-selected"><i class="fas fa-circle fa-lg"></i></li>
+                <li class="chronology__list label"><i class="fas fa-circle fa-lg"></i></li>
+                <li class="chronology__list label"><i class="fas fa-circle fa-lg"></i></li>
+                <li class="chronology__list label"><i class="fas fa-circle fa-lg"></i></li>
+                <li class="chronology__list label"><i class="fas fa-circle fa-lg"></i></li>
+                <li class="chronology__list label"><i class="fas fa-circle fa-lg"></i></li>
               </ul>
             </div><!-- END chronology -->
           </div><!-- END profile__chronology -->
           <div class="profile__body">
             <div id="profile-contents">
-              <div class="profile-content is-show" data-profile="main-profile">
-                <img src="../images/profile_01.jpg" alt="" class="profile-content__image">
-                <div class="profile-content__desc">
-                  <h2 class="profile-content__title">自己紹介</h2>
-                  <p class="profile-content__text">年齢：1985年生まれ 34歳</p>
-                  <p class="profile-content__text">出身：東京都</p>
-                  <p class="profile-content__text">趣味：野球・アメフト・コーヒー</p>
-                  <p class="profile-content__text">特技：ラテアート・友人の子供と仲良くなること</p>
-                  <p class="profile-content__text">できること：営業・接客・人材育成・webデザイン・コーディング・web制作ディレクション・コーチング・ティーチング</p>
+              <div class="panel is-show">
+                <img src="../images/profile_01.jpg" alt="" class="panel__image">
+                <div class="panel__desc">
+                  <h2 class="panel__title">自己紹介</h2>
+                  <p class="panel__text"><span>年齢</span>：1985年生まれ 34歳</p>
+                  <p class="panel__text"><span>出身</span>：東京都</p>
+                  <p class="panel__text"><span>趣味</span>：野球・アメフト・コーヒー</p>
+                  <p class="panel__text"><span>特技</span>：ラテアート・友人の子供と仲良くなること</p>
+                  <p class="panel__text"><span>できること</span>：営業・テレアポ・接客<br>webデザイン・コーディング<br>web制作ディレクション・写真撮影<br>プログラミング学習のコーチング</p>
+                  <p class="panel__text"><span>学生時代</span>：高校と大学の7年間を体育会のアメフト部で過ごしました。<br>大学では観光学を専攻（ただ、ほぼ部活動しかしてなかった典型的な体育会系でした）</p>
                 </div>
-              </div><!-- END profile-content -->
-              <div class="profile-content" data-profile="profile-1">
-                <img src="" alt="" class="profile-content__image">
-                <div class="profile-content__desc">
-                  <h2 class="profile-content__title">勉強 ＜ 野球とアメフト</h2>
-                  <p class="profile-content__text">大学は観光学を専攻していましたが、小学校から野球を、高校から大学はアメフトに夢中で、学業にはそこまで力を入れてきませんでした。<br>
-                    <span class="profile-content__point">得たこと</span><span class="profile-content__emphasis">協調性の大事さ</span><br>
+              </div><!-- END panel -->
+              <div class="panel">
+                <img src="" alt="" class="panel__image">
+                <div class="panel__desc">
+                  <h2 class="panel__title">旅行会社で法人営業</h2>
+                  <p class="panel__text">大学は観光学を専攻していましたが、小学校から野球を、高校から大学はアメフトに夢中で、学業にはそこまで力を入れてきませんでした。<br>
+                    <span class="panel__point">得たこと</span><span class="panel__emphasis">協調性の大事さ</span><br>
                     団体競技をしてきたため、自然と協調性は身に付きました。<br>
                     特にアメフトは「一人ひとりが明確に決められた役割」をすることを前提にプレーしていくので、「自分のことと同じように他のことのことも考える動く＝協調性」の大事さを体感していました。</p>
                 </div>
-              </div><!-- END profile-content -->
-              <div class="profile-content" data-profile="profile-2">
-                <img src="" alt="" class="profile-content__image">
-                <div class="profile-content__desc">
-                  <h2 class="profile-content__title">行動量と</h2>
-                  <p class="profile-content__text">大学は観光学を専攻していましたが、小学校から野球を、高校から大学はアメフトに夢中で、学業にはそこまで力を入れてきませんでした。<br>
-                    <span class="profile-content__point">得たこと</span><span class="profile-content__emphasis">協調性の大事さ</span><br>
-                    団体競技をしてきたため、自然と協調性は身に付きました。<br>
-                    特にアメフトは「一人ひとりが明確に決められた役割」をすることを前提にプレーしていくので、「自分のことと同じように他のことのことも考える動く＝協調性」の大事さを体感していました。</p>
-                </div>
-              </div><!-- END profile-content -->
-              <div class="profile-content" data-profile="profile-3">
-                <img src="" alt="" class="profile-content__image">
-                <div class="profile-content__desc">
-                  <h2 class="profile-content__title">勉強 ＜ 野球とアメフト</h2>
-                  <p class="profile-content__text">大学は観光学を専攻していましたが、小学校から野球を、高校から大学はアメフトに夢中で、学業にはそこまで力を入れてきませんでした。<br>
-                    <span class="profile-content__point">得たこと</span><span class="profile-content__emphasis">協調性の大事さ</span><br>
-                    団体競技をしてきたため、自然と協調性は身に付きました。<br>
-                    特にアメフトは「一人ひとりが明確に決められた役割」をすることを前提にプレーしていくので、「自分のことと同じように他のことのことも考える動く＝協調性」の大事さを体感していました。</p>
-                </div>
-              </div><!-- END profile-content -->
-              <div class="profile-content" data-profile="profile-4">
-                <img src="" alt="" class="profile-content__image">
-                <div class="profile-content__desc">
-                  <h2 class="profile-content__title">勉強 ＜ 野球とアメフト</h2>
-                  <p class="profile-content__text">大学は観光学を専攻していましたが、小学校から野球を、高校から大学はアメフトに夢中で、学業にはそこまで力を入れてきませんでした。<br>
-                    <span class="profile-content__point">得たこと</span><span class="profile-content__emphasis">協調性の大事さ</span><br>
-                    団体競技をしてきたため、自然と協調性は身に付きました。<br>
-                    特にアメフトは「一人ひとりが明確に決められた役割」をすることを前提にプレーしていくので、「自分のことと同じように他のことのことも考える動く＝協調性」の大事さを体感していました。</p>
-                </div>
-              </div><!-- END profile-content -->
+              </div><!-- END panel -->
             </div>
           </div><!-- END profile__body -->
           <div id="contact-btn">
