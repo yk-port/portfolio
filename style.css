@@ -305,7 +305,7 @@ body .container {
 }
 
 .chronology__list:nth-of-type(2) i:hover::after {
-  content: '営業マン時代';
+  content: '営業マン';
 }
 
 .chronology__list:nth-of-type(3)::before {
@@ -313,7 +313,7 @@ body .container {
 }
 
 .chronology__list:nth-of-type(3) i:hover::after {
-  content: 'バリスタ時代';
+  content: 'バリスタ';
 }
 
 .chronology__list:nth-of-type(4)::before {
@@ -321,7 +321,7 @@ body .container {
 }
 
 .chronology__list:nth-of-type(4) i:hover::after {
-  content: 'グルメ広告媒体コンサル時代';
+  content: 'グルメ広告媒体コンサル';
 }
 
 .chronology__list:nth-of-type(5)::before {
@@ -329,7 +329,7 @@ body .container {
 }
 
 .chronology__list:nth-of-type(5) i:hover::after {
-  content: '教育系ITベンチャー時代';
+  content: '教育系ITベンチャー';
 }
 
 .chronology__list:nth-of-type(6)::before {
@@ -337,7 +337,15 @@ body .container {
 }
 
 .chronology__list:nth-of-type(6) i:hover::after {
-  content: 'フリーランス時代';
+  content: '個人事業主';
+}
+
+.chronology__list:nth-of-type(7)::before {
+  content: 'future';
+}
+
+.chronology__list:nth-of-type(7) i:hover::after {
+  content: 'これから';
 }
 
 .chronology__list i {
@@ -745,11 +753,11 @@ body .container {
 ————————————————*/
 #profile-contents .panel {
   position: absolute;
-  top: -150vh;
+  top: -100vh;
   left: 0;
   visibility: hidden;
   opacity: 0;
-  transition: all 1s cubic-bezier(1, 0, 0, 1);
+  transition: all 1s cubic-bezier(0, 0.6, 1, 1);
 }
 
 #profile-contents .panel.is-show {
@@ -758,7 +766,7 @@ body .container {
   left: 0;
   visibility: visible;
   opacity: 1;
-  transition: all 1s cubic-bezier(1, 0, 0, 1);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .profile__title.is-selected::after {

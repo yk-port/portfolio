@@ -38,7 +38,7 @@
         content: '2008~';
       }
       i:hover::after {
-        content: '営業マン時代';
+        content: '営業マン';
       }
     }
     &:nth-of-type(3) {
@@ -46,7 +46,7 @@
         content: '2013~';
       }
       i:hover::after {
-        content: 'バリスタ時代';
+        content: 'バリスタ';
       }
     }
     &:nth-of-type(4) {
@@ -54,7 +54,7 @@
         content: '2015~';
       }
       i:hover::after {
-        content: 'グルメ広告媒体コンサル時代';
+        content: 'グルメ広告媒体コンサル';
       }
     }
     &:nth-of-type(5) {
@@ -62,7 +62,7 @@
         content: '2017~';
       }
       i:hover::after {
-        content: '教育系ITベンチャー時代';
+        content: '教育系ITベンチャー';
       }
     }
     &:nth-of-type(6) {
@@ -70,7 +70,15 @@
         content: '2019~';
       }
       i:hover::after {
-        content: 'フリーランス時代';
+        content: '個人事業主';
+      }
+    }
+    &:nth-of-type(7) {
+      &::before {
+        content: 'future';
+      }
+      i:hover::after {
+        content: 'これから';
       }
     }
     i {
