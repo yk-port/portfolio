@@ -2,8 +2,6 @@
   width: 100%;
   height: 100%;
   .panel {
-    display: none;
-    transition: display 2s ease-in-out;
     width: 100%;
     height: 100%;
     &::after {
@@ -19,11 +17,14 @@
       float: left;
     }
     &__desc {
-      width: calc(100% - 272px);
+      width: 100%;
       height: 100%;
       overflow: scroll;
       margin-right: 8px;
       float: left;
+      &--with-image {
+        width: calc(100% - 272px);
+      }
     }
     &__title {
       position: relative;
@@ -52,9 +53,3 @@
   }
 }
 
-#profile-contents {
-  .is-show {
-    display: block;
-    transition: display 2s ease-in-out;
-  }
-}

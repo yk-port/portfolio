@@ -1,0 +1,21 @@
+#profile-contents {
+  .panel {
+    position: absolute;
+    top: -150vh;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s cubic-bezier(1, 0, 0, 1);
+  }
+}
+
+#profile-contents {
+  .panel.is-show {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s cubic-bezier(1, 0, 0, 1);
+  }
+}

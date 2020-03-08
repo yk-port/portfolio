@@ -506,8 +506,6 @@ body .container {
 }
 
 #profile-contents .panel {
-  display: none;
-  transition: display 2s ease-in-out;
   width: 100%;
   height: 100%;
 }
@@ -527,11 +525,15 @@ body .container {
 }
 
 #profile-contents .panel__desc {
-  width: calc(100% - 272px);
+  width: 100%;
   height: 100%;
   overflow: scroll;
   margin-right: 8px;
   float: left;
+}
+
+#profile-contents .panel__desc--with-image {
+  width: calc(100% - 272px);
 }
 
 #profile-contents .panel__title {
@@ -560,11 +562,6 @@ body .container {
 
 #profile-contents .panel__text span {
   font-weight: 700;
-}
-
-#profile-contents .is-show {
-  display: block;
-  transition: display 2s ease-in-out;
 }
 
 /*————————————————
@@ -746,6 +743,24 @@ body .container {
 /*————————————————
   5-state
 ————————————————*/
+#profile-contents .panel {
+  position: absolute;
+  top: -150vh;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s cubic-bezier(1, 0, 0, 1);
+}
+
+#profile-contents .panel.is-show {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: visible;
+  opacity: 1;
+  transition: all 1s cubic-bezier(1, 0, 0, 1);
+}
+
 .profile__title.is-selected::after {
   content: '';
   display: block;
