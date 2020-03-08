@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>LitGraphic - portfolio | skill</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../js/script.js"></script>
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <div id="skill">
+  <div id="profile">
     <div class="container">
       <div class="border-gradient">
         <div class="border-gradient__top"></div>
@@ -19,104 +21,108 @@
       </div><!-- END border-gradient -->
       <nav id="nav">
         <ul class="menu">
-          <li class="menu__list"><a href="" class="menu__item">Top</a></li>
-          <li class="menu__list"><a href="" class="menu__item">Profile</a></li>
-          <li class="menu__list"><a href="" class="menu__item">Skill</a></li>
+          <li class="menu__list"><a href="../index.html" class="menu__item">Top</a></li>
+          <li class="menu__list"><a href="../profile/index.html" class="menu__item">Profile</a></li>
+          <li class="menu__list"><a href="./index.html" class="menu__item">Skill</a></li>
           <li class="menu__list"><a href="" class="menu__item">Blog</a></li>
         </ul>
       </nav><!-- END nav -->
-      <div class="skill">
-        <div class="skill__title">
-          <h1 class="heading">skill</h1>
-        </div><!-- END skill__title -->
-        <div class="skill__body">
-          <div class="grid-wrap">
-            <div class="grid-wrap__content">
-              <div class="grid-wrap__icon"><i class="fab fa-html5 fa-6x"></i></div>
-              <div class="grid-wrap__title">
-                <h2 class="second-heading">HTML5</h2>
+      <div id="contents-body">
+        <div id="transition-inner" class="is-transition-open">
+          <div class="skill">
+            <div class="skill__title">
+              <h1 class="heading">skill</h1>
+            </div><!-- END skill__title -->
+            <div class="skill__body">
+              <div class="grid-wrap">
+                <div class="grid-wrap__content">
+                  <div class="grid-wrap__icon"><i class="fab fa-html5 fa-6x"></i></div>
+                  <div class="grid-wrap__title">
+                    <h2 class="second-heading">HTML5</h2>
+                  </div>
+                  <p class="grid-wrap__text">BEMを使った<br>マークアップ</p>
+                </div><!-- END grid-wrap__content -->
+                <div class="grid-wrap__content">
+                  <div class="grid-wrap__icon"><i class="fab fa-css3 fa-6x"></i></div>
+                  <div class="grid-wrap__title">
+                    <h2 class="second-heading">CSS3</h2>
+                  </div>
+                  <p class="grid-wrap__text">Sassを使った<br>CSS設計</p>
+                </div><!-- END grid-wrap__content -->
+                <div class="grid-wrap__content">
+                  <div class="grid-wrap__icon"><i class="fab fa-js-square fa-6x"></i></div>
+                  <div class="grid-wrap__title">
+                    <h2 class="second-heading">JavaScript</h2>
+                  </div>
+                  <p class="grid-wrap__text">ES6での記述<br>jQuery使用可</p>
+                </div><!-- END grid-wrap__content -->
+                <div class="grid-wrap__content">
+                  <div class="grid-wrap__icon"><i class="fab fa-react fa-6x"></i></div>
+                  <div class="grid-wrap__title">
+                    <h2 class="second-heading">React</h2>
+                  </div>
+                  <p class="grid-wrap__text">現在学習中<br><a href="/" target="_blank">製作中のサイト<i class="fas fa-link"></i></a></p>
+                </div><!-- END grid-wrap__content -->
+                <div class="grid-wrap__content">
+                  <div class="grid-wrap__icon"><i class="fab fa-adobe fa-6x"></i></div>
+                  <div class="grid-wrap__title">
+                    <h2 class="second-heading">webデザイン</h2>
+                  </div>
+                  <p class="grid-wrap__text">AdobeXDでの<br>ワイヤー・カンプ作成</p>
+                </div><!-- END grid-wrap__content -->
+                <div class="grid-wrap__content">
+                  <div class="grid-wrap__icon"><i class="fas fa-image fa-6x"></i></div>
+                  <div class="grid-wrap__title">
+                    <h2 class="second-heading">Photoshop</h2>
+                  </div>
+                  <p class="grid-wrap__text">webデザイン作成<br>画像のスライス</p>
+                </div><!-- END grid-wrap__content -->
+                <div class="grid-wrap__content">
+                  <div class="grid-wrap__icon"><i class="fas fa-user-clock fa-6x"></i></div>
+                  <div class="grid-wrap__title">
+                    <h2 class="second-heading">ディレクション</h2>
+                  </div>
+                  <p class="grid-wrap__text">ヒアリング・プレゼン<br>制作スケジュール管理</p>
+                </div><!-- END grid-wrap__content -->
+                <div class="grid-wrap__content">
+                  <div class="grid-wrap__icon"><i class="fab fa-wordpress fa-6x"></i></div>
+                  <div class="grid-wrap__title">
+                    <h2 class="second-heading">WordPress</h2>
+                  </div>
+                  <p class="grid-wrap__text">テンプレート作成<br><a href="https://kanetajimusyo.com/" target="_blank">制作したサイト<i class="fas fa-link"></i></a></p>
+                </div><!-- END grid-wrap__content -->
+                <div class="grid-wrap__content">
+                  <div class="grid-wrap__icon"><i class="fab fa-gulp fa-6x"></i></div>
+                  <div class="grid-wrap__title">
+                    <h2 class="second-heading">Gulp</h2>
+                  </div>
+                  <p class="grid-wrap__text">経験浅、基本的な<br>スクリプトの作成可</p>
+                </div><!-- END grid-wrap__content -->
+                <div class="grid-wrap__content">
+                  <div class="grid-wrap__icon"><i class="fab fa-github fa-6x"></i></div>
+                  <div class="grid-wrap__title">
+                    <h2 class="second-heading">github</h2>
+                  </div>
+                  <p class="grid-wrap__text">githubフロー<br>レビュー経験あり</p>
+                </div><!-- END grid-wrap__content -->
+                <div class="grid-wrap__content">
+                  <div class="grid-wrap__icon"><i class="fas fa-gem fa-6x"></i></div>
+                  <div class="grid-wrap__title">
+                    <h2 class="second-heading">Ruby/Rails</h2>
+                  </div>
+                  <p class="grid-wrap__text">ゼロから作成可<br><a href="https://simple-tweet-app.herokuapp.com/" target="_blank">制作したサイト<i class="fas fa-link"></i></a></p>
+                </div><!-- END grid-wrap__content -->
               </div>
-              <p class="grid-wrap__text">BEMを使った<br>マークアップ</p>
-            </div><!-- END grid-wrap__content -->
-            <div class="grid-wrap__content">
-              <div class="grid-wrap__icon"><i class="fab fa-css3 fa-6x"></i></div>
-              <div class="grid-wrap__title">
-                <h2 class="second-heading">CSS3</h2>
+            </div><!-- END skill__body -->
+            <div class="skill__contact">
+              <div id="contact-btn">
+                <label for="contact-modal">話を聞いてみたい</label>
+                <input type="checkbox" id="contact-modal">
               </div>
-              <p class="grid-wrap__text">Sassを使った<br>CSS設計</p>
-            </div><!-- END grid-wrap__content -->
-            <div class="grid-wrap__content">
-              <div class="grid-wrap__icon"><i class="fab fa-js-square fa-6x"></i></div>
-              <div class="grid-wrap__title">
-                <h2 class="second-heading">JavaScript</h2>
-              </div>
-              <p class="grid-wrap__text">ES6での記述<br>jQuery使用可</p>
-            </div><!-- END grid-wrap__content -->
-            <div class="grid-wrap__content">
-              <div class="grid-wrap__icon"><i class="fab fa-react fa-6x"></i></div>
-              <div class="grid-wrap__title">
-                <h2 class="second-heading">React</h2>
-              </div>
-              <p class="grid-wrap__text">現在学習中<br><a href="/" target="_blank">製作中のサイト<i class="fas fa-link"></i></a></p>
-            </div><!-- END grid-wrap__content -->
-            <div class="grid-wrap__content">
-              <div class="grid-wrap__icon"><i class="fab fa-adobe fa-6x"></i></div>
-              <div class="grid-wrap__title">
-                <h2 class="second-heading">webデザイン</h2>
-              </div>
-              <p class="grid-wrap__text">AdobeXDでの<br>ワイヤー・カンプ作成</p>
-            </div><!-- END grid-wrap__content -->
-            <div class="grid-wrap__content">
-              <div class="grid-wrap__icon"><i class="fas fa-image fa-6x"></i></div>
-              <div class="grid-wrap__title">
-                <h2 class="second-heading">Photoshop</h2>
-              </div>
-              <p class="grid-wrap__text">webデザイン作成<br>画像のスライス</p>
-            </div><!-- END grid-wrap__content -->
-            <div class="grid-wrap__content">
-              <div class="grid-wrap__icon"><i class="fas fa-user-clock fa-6x"></i></div>
-              <div class="grid-wrap__title">
-                <h2 class="second-heading">ディレクション</h2>
-              </div>
-              <p class="grid-wrap__text">ヒアリング・プレゼン<br>制作スケジュール管理</p>
-            </div><!-- END grid-wrap__content -->
-            <div class="grid-wrap__content">
-              <div class="grid-wrap__icon"><i class="fab fa-wordpress fa-6x"></i></div>
-              <div class="grid-wrap__title">
-                <h2 class="second-heading">WordPress</h2>
-              </div>
-              <p class="grid-wrap__text">テンプレート作成<br><a href="https://kanetajimusyo.com/" target="_blank">制作したサイト<i class="fas fa-link"></i></a></p>
-            </div><!-- END grid-wrap__content -->
-            <div class="grid-wrap__content">
-              <div class="grid-wrap__icon"><i class="fab fa-gulp fa-6x"></i></div>
-              <div class="grid-wrap__title">
-                <h2 class="second-heading">Gulp</h2>
-              </div>
-              <p class="grid-wrap__text">経験浅、基本的な<br>スクリプトの作成可</p>
-            </div><!-- END grid-wrap__content -->
-            <div class="grid-wrap__content">
-              <div class="grid-wrap__icon"><i class="fab fa-github fa-6x"></i></div>
-              <div class="grid-wrap__title">
-                <h2 class="second-heading">github</h2>
-              </div>
-              <p class="grid-wrap__text">githubフロー<br>レビュー経験あり</p>
-            </div><!-- END grid-wrap__content -->
-            <div class="grid-wrap__content">
-              <div class="grid-wrap__icon"><i class="fas fa-gem fa-6x"></i></div>
-              <div class="grid-wrap__title">
-                <h2 class="second-heading">Ruby/Rails</h2>
-              </div>
-              <p class="grid-wrap__text">ゼロから作成可<br><a href="https://simple-tweet-app.herokuapp.com/" target="_blank">制作したサイト<i class="fas fa-link"></i></a></p>
-            </div><!-- END grid-wrap__content -->
+            </div><!-- END skill__contact -->
           </div>
-        </div><!-- END skill__body -->
-        <div class="skill__contact">
-          <div id="contact-btn">
-            <label for="contact-modal">話を聞いてみたい</label>
-            <input type="checkbox" id="contact-modal">
-          </div>
-        </div><!-- END skill__contact -->
-      </div>
+        </div><!-- END #transition-inner -->
+      </div><!-- END #contents-body -->
     </div>
   </div>
 </body>
