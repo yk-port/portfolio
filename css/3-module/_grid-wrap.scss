@@ -1,6 +1,6 @@
 .grid-wrap {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(11, 180px);
   &__content {
     padding: 16px;
     text-align: center;

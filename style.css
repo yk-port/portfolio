@@ -413,7 +413,7 @@ body .container {
 
 .grid-wrap {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(11, 180px);
 }
 
 .grid-wrap__content {
