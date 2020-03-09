@@ -181,6 +181,11 @@ a:focus {
 /*————————————————
   2-lib
 ————————————————*/
+.slick-prev:before,
+.slick-next:before {
+  color: #2C334B !important;
+}
+
 /* Slider */
 .slick-loading .slick-list {
   background: #fff url("./ajax-loader.gif") center center no-repeat;
@@ -865,31 +870,6 @@ body .container {
   transform: translate(0, -50%);
   width: 70%;
   height: 240px;
-  overflow-y: scroll;
-}
-
-.portfolio-menu {
-  position: absolute;
-  top: 20%;
-  left: 30%;
-  width: 50%;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-}
-
-.portfolio-menu__list {
-  font-size: 1.5rem;
-  margin: 8px 96px 8px 0;
-  padding: 8px 96px 8px 0;
-  outline: none;
-  cursor: pointer;
-  transition: opacity 0.2s;
-}
-
-.portfolio-menu__list:hover {
-  opacity: 0.8;
 }
 
 #portfolio-contents {
@@ -912,16 +892,16 @@ body .container {
 
 #portfolio-contents .portfolio-content__image .pc-portfolio {
   position: absolute;
-  top: -150px;
+  top: -135px;
   left: 0;
   width: 75%;
 }
 
 #portfolio-contents .portfolio-content__image .sp-portfolio {
   position: absolute;
-  top: -65px;
+  top: -60px;
   right: 10px;
-  width: 55%;
+  width: 50%;
 }
 
 #portfolio-contents .portfolio-content__body {

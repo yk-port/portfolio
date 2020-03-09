@@ -20,15 +20,19 @@ $(function() {
 
   // slickを使ったスライダー
   $('#portfolio-contents').slick({
-    infinite: true,
-    arrows: false,
-    fade: true,
-    draggable: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: true,
+    dots: true,
+    // infinite: true,
+    // arrows: false,
+    // fade: true,
+    // draggable: false,
   });
-  $('#portfolio-menu').slick({
-    infinite: true,
-    slidesToShow: 6,
-    focusOnSelect: true,
-    asNavFor: '#portfolio-contents',
-  });
+  // $('#portfolio-menu').slick({
+  //   infinite: true,
+  //   slidesToShow: 6,
+  //   focusOnSelect: true,
+  //   asNavFor: '#portfolio-contents',
+  // });
 });
