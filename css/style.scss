@@ -9,21 +9,27 @@
 @import './1-base/keyframes';
 
 /*————————————————
-  2-layout
+  2-lib
 ————————————————*/
-@import './2-layout/**/*.scss';
+@import './2-lib/**/*.scss';
+
 
 /*————————————————
-  3-module
+  3-layout
 ————————————————*/
-@import './3-module/**/*.scss';
+@import './3-layout/**/*.scss';
 
 /*————————————————
-  4-page
+  4-module
 ————————————————*/
-@import './4-page/**/*.scss';
+@import './4-module/**/*.scss';
 
 /*————————————————
-  5-state
+  5-page
 ————————————————*/
-@import './5-state/**/*.scss';
+@import './5-page/**/*.scss';
+
+/*————————————————
+  6-state
+————————————————*/
+@import './6-state/**/*.scss';

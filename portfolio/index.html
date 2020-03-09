@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>About Yokokura WebPage | PORTFOLIO</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/slick.min.js"></script>
   <script src="../js/script.js"></script>
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
@@ -29,73 +30,121 @@
       </nav><!-- END nav -->
       <div id="contents-body">
         <div id="transition-inner" class="is-transition-open">
-          <section class="profile">
-            <div class="profile__title">
-              <h1 class="heading">profile</h1>
-            </div><!-- END profile__title -->
-            <div class="profile__chronology">
-              <div class="chronology">
-                <div class="chronology__line"></div>
-                <ul class="chronology__nav" id="tab">
-                  <li class="chronology__list label is-selected"><i class="fas fa-circle fa-lg"></i></li>
-                  <li class="chronology__list label"><i class="fas fa-circle fa-lg"></i></li>
-                  <li class="chronology__list label"><i class="fas fa-circle fa-lg"></i></li>
-                  <li class="chronology__list label"><i class="fas fa-circle fa-lg"></i></li>
-                  <li class="chronology__list label"><i class="fas fa-circle fa-lg"></i></li>
-                  <li class="chronology__list label"><i class="fas fa-circle fa-lg"></i></li>
-                </ul>
-              </div><!-- END chronology -->
-            </div><!-- END profile__chronology -->
-            <div class="profile__body">
-              <div id="profile-contents">
-                <div class="panel is-show">
-                  <img src="../images/profile_01.jpg" alt="" class="panel__image">
-                  <div class="panel__desc panel__desc--with-image">
-                    <h2 class="panel__title">自己紹介</h2>
-                    <p class="panel__text"><span>年齢</span>：1985年生まれ 34歳</p>
-                    <p class="panel__text"><span>出身</span>：東京都</p>
-                    <p class="panel__text"><span>性質</span>：滅多に怒らない・楽観的・凝り性・直感的に行動することがある</p>
-                    <p class="panel__text"><span>趣味</span>：野球・アメフト・コーヒー</p>
-                    <p class="panel__text"><span>特技</span>：ラテアート・友人の子供と仲良くなること</p>
-                    <p class="panel__text"><span>できること</span>：営業・テレアポ・接客<br>webデザイン・コーディング<br>web制作ディレクション・写真撮影<br>プログラミング学習のコーチング</p>
-                    <p class="panel__text"><span>学生時代</span>：高校と大学の7年間を体育会のアメフト部で過ごしました。<br>大学では観光学を専攻（ただ、ほぼ部活動しかしてなかった典型的な体育会系でした）</p>
-                  </div>
-                </div><!-- END panel -->
-                <div class="panel">
-                  <div class="panel__desc">
-                    <h2 class="panel__title">とにかく行動量！旅行会社の法人営業</h2>
-                    <p class="panel__text"><span>具体的には？ </span>社員旅行需要の新規開拓。研修旅行など企業の人材育成に入り込んだ需要の開拓。</p>
-                    <p class="panel__text"><span>得た経験は？ </span>様々な企業・大手企業で役職のある方へプレゼンする経験。旅行商材を作り上げるためのディレクション経験。後輩のマネジメント経験。</p>
-                    <p class="panel__text"><span>何を身に付けた？ </span>ヒアリング能力。仮説を立てて提案する能力。営業における気合と根性。</p>
-                    <p class="panel__text"><span>何で辞めた？ </span>「1回きりしかない人生、やりたいことをやるべき！」という思いと、「手に職をつけている人」への憧れから、以前から興味があったバリスタに転身したいと思ったから。</p>
-                  </div>
-                </div><!-- END panel -->
-                <div class="panel">
-                  <img src="../images/profile_01.jpg" alt="" class="panel__image">
-                  <div class="panel__desc panel__desc--with-image">
-                    <h2 class="panel__title">閉店後のラテアート練習に没頭</h2>
-                    <p class="panel__text"><span>なにやってた？ </span>2店舗かけもちでバリスタとしてアルバイト。その後社員でストアマネージャー。</p>
-                    <p class="panel__text"><span>なぜバイト？ </span>大手のカフェチェーンでのオペレーションと、小規模でラテアートに力を入れてる店舗でバリスタとしてのスキルを身に付けたかったから。さすがにいつまでもバイトはまずいと思い社員に。</p>
-                    <p class="panel__text"><span>何を身に付けた？ </span>自己犠牲の精神。きれいにラテアートを描く能力。</p>
-                    <p class="panel__text"><span>何で辞めた？ </span>外部のweb集客セミナーに参加して、「webを通じて何かをする」ことに一気に興味が傾いたため。</p>
-                  </div>
-                </div><!-- END panel -->
-                <div class="panel">
-                  <div class="panel__desc">
-                    <h2 class="panel__title">仕事終わったあとでweb制作を学び始める時期</h2>
-                    <p class="panel__text"><span>仕事内容は？ </span>食べログに課金して頂いている飲食店さんに対して、エリアごと・時間帯ごと・業種業態ごとで食べログの閲覧傾向や流入キーワードを見て、レポートを元に毎月店舗に訪問して来店促進を目的とした店舗ページの改修提案をする仕事。</p>
-                    <p class="panel__text"><span>得た経験は？ </span>IT企業で新サービスのリリース時期にサービスを改善していく経験。データを見て仮説を立てて改善提案をする経験。</p>
-                    <p class="panel__text"><span>何を身に付けた？ </span>webデザインやコーディングの知識。（就業後に社内外で自己研鑽に時間を使っていたため）</p>
-                    <p class="panel__text"><span>何で辞めた？ </span>web制作・プログラミングの実経験をして技術力を付けたいと思ったため。</p>
-                  </div>
-                </div><!-- END panel -->
-              </div>
-            </div><!-- END profile__body -->
+          <section class="portfolio">
+            <div class="portfolio__title">
+              <h1 class="heading">portfolio</h1>
+            </div><!-- END portfolio__title -->
+
+            <ul class="portfolio-menu" id="portfolio-menu">
+              <li class="portfolio-menu__list">コーポレートサイト</li>
+              <li class="portfolio-menu__list">キャンペーンサイト</li>
+              <li class="portfolio-menu__list">CRUDアプリ(Rails)</li>
+              <li class="portfolio-menu__list">士業系サイト</li>
+              <li class="portfolio-menu__list">サービス紹介サイト</li>
+              <li class="portfolio-menu__list">メディアサイト</li>
+            </ul><!-- END #portfolio-menu -->
+
+            <div class="portfolio__body">
+              <div id="portfolio-contents">
+                <div class="portfolio-content">
+                  <div class="portfolio-content__image">
+                    <img src="../images/pc_portfolio/pc_portfolio-1.png" alt="" class="pc-portfolio">
+                    <img src="../images/sp_portfolio/sp_portfolio-1.png" alt="" class="sp-portfolio">
+                  </div><!-- END portfolio-content__image -->
+                  <div class="portfolio-content__body">
+                    <h2 class="portfolio-content__title">コーポレートサイト</h2>
+                    <div class="portfolio-content__desc">
+                      <p class="portfolio-content__text"><span>URL：</span><a href="https://litgraphic.xsrv.jp/fuperi_corporate_site/" target="_blank">https://litgraphic.xsrv.jp/fuperi_corporate_site/</a></p>
+                      <p class="portfolio-content__text"><span>担当範囲：</span>ヒアリング・打合せ<br>ページのデザイン（AdobeXD）<br>コーディング（HTML / CSS(Sass) / JS / jQuery）</p>
+                      <p class="portfolio-content__text"><span>制作時間：</span>100時間<br>（打合せ：20時間 / デザイン：30時間 / コーディング：50時間）</p>
+                      <p class="portfolio-content__text"><span>制作概要：</span>既存のホームページを全面改修。記載する内容や構成などは先方と打合せをして決めていきました。<br>ページ内の動きはすべてjqueryを使って実装しています。</p>
+                      <p class="portfolio-content__text"><span>その他：</span>事業撤退につき、現在HPはクローズしています</p>
+                    </div>
+                  </div><!-- END portfolio-content__body -->
+                </div><!-- END portfolio-content -->
+                <div class="portfolio-content">
+                  <div class="portfolio-content__image">
+                    <img src="../images/pc_portfolio/pc_portfolio-2.png" alt="" class="pc-portfolio">
+                    <img src="../images/sp_portfolio/sp_portfolio-2.png" alt="" class="sp-portfolio">
+                  </div><!-- END portfolio-content__image -->
+                  <div class="portfolio-content__body">
+                    <h2 class="portfolio-content__title">キャンペーンサイト</h2>
+                    <div class="portfolio-content__desc">
+                      <p class="portfolio-content__text"><span>URL：</span><a href="https://www.oceanus-dive.jp/okinawa/ishigaki/manta.php" target="_blank">https://www.oceanus-dive.jp/okinawa/ishigaki/manta.php</a></p>
+                      <p class="portfolio-content__text"><span>担当範囲：</span>ヒアリング・打合せ<br>ページのデザイン（AdobeXD）<br>コーディング（HTML / CSS(Sass) / JS / jQuery）</p>
+                      <p class="portfolio-content__text"><span>制作時間：</span>80時間<br>（打合せ：15時間 / デザイン：25時間 / コーディング：40時間）</p>
+                      <p class="portfolio-content__text"><span>制作概要：</span>デザインはモックアップのみ制作し、打合せをしながらデザインのイメージを決めていき制作しました。</p>
+                    </div>
+                  </div><!-- END portfolio-content__body -->
+                </div><!-- END portfolio-content -->
+                <div class="portfolio-content">
+                  <div class="portfolio-content__image">
+                    <img src="../images/pc_portfolio/pc_portfolio-3.png" alt="" class="pc-portfolio">
+                    <img src="../images/sp_portfolio/sp_portfolio-3.png" alt="" class="sp-portfolio">
+                  </div><!-- END portfolio-content__image -->
+                  <div class="portfolio-content__body">
+                    <h2 class="portfolio-content__title">CRUDアプリ（Rails）</h2>
+                    <div class="portfolio-content__desc">
+                      <p class="portfolio-content__text"><span>URL：</span><a href="https://simple-tweet-app.herokuapp.com/" target="_blank">https://simple-tweet-app.herokuapp.com/</a></p>
+                      <p class="portfolio-content__text"><span>担当範囲：</span>ヒアリング・打合せ<br>ページのデザイン（AdobeXD）<br>コーディング（HTML(BEM) / CSS(Sass) / JS / jQuery）</p>
+                      <p class="portfolio-content__text"><span>制作時間：</span>80時間<br>（デザイン：10時間 / 実装：70時間）</p>
+                      <p class="portfolio-content__text"><span>制作概要：</span>RailsでCRUD処理とBEMでの命名規則を意識したコーディング、Sassを使ってのCSS管理を意識しながら制作しました。</p>
+                    </div>
+                  </div><!-- END portfolio-content__body -->
+                </div><!-- END portfolio-content -->
+                <div class="portfolio-content">
+                  <div class="portfolio-content__image">
+                    <img src="../images/pc_portfolio/pc_portfolio-4.png" alt="" class="pc-portfolio">
+                    <img src="../images/sp_portfolio/sp_portfolio-4.png" alt="" class="sp-portfolio">
+                  </div><!-- END portfolio-content__image -->
+                  <div class="portfolio-content__body">
+                    <h2 class="portfolio-content__title">コーポレートサイト（士業系）</h2>
+                    <div class="portfolio-content__desc">
+                      <p class="portfolio-content__text"><span>URL：</span><a href="https://kanetajimusyo.com/" target="_blank">https://kanetajimusyo.com/</a></p>
+                      <p class="portfolio-content__text"><span>担当範囲：</span>ヒアリング・打合せ<br>ページのデザイン（AdobeXD）<br>コーディング（HTML / CSS(Sass) / JS / jQuery）</p>
+                      <p class="portfolio-content__text"><span>制作時間：</span>100時間<br>（打合せ：10時間 / デザイン：20時間 / コーディング：70時間）</p>
+                      <p class="portfolio-content__text"><span>制作概要：</span>打合せはChatWorkにて実施。現状の課題を伺った上でデザインを提案。WordPressにて実装しています。</p>
+                    </div>
+                  </div><!-- END portfolio-content__body -->
+                </div><!-- END portfolio-content -->
+                <div class="portfolio-content">
+                  <div class="portfolio-content__image">
+                    <img src="../images/pc_portfolio/pc_portfolio-5.png" alt="" class="pc-portfolio">
+                    <img src="../images/sp_portfolio/sp_portfolio-5.png" alt="" class="sp-portfolio">
+                  </div><!-- END portfolio-content__image -->
+                  <div class="portfolio-content__body">
+                    <h2 class="portfolio-content__title">サービス紹介サイト（Rails）</h2>
+                    <div class="portfolio-content__desc">
+                      <p class="portfolio-content__text"><span>URL：</span><a href="https://tech-camp.in/inazuma/winter" target="_blank">https://tech-camp.in/inazuma/winter</a></p>
+                      <p class="portfolio-content__text"><span>担当範囲：</span>コーディング（HTML / CSS / JS / Rails）</p>
+                      <p class="portfolio-content__text"><span>制作時間：</span>30時間</p>
+                      <p class="portfolio-content__text"><span>制作概要：</span>Railsで制作されているページのため、部分的にHTMLにRailsタグを使って実装しています。<br>完成されたデザインや、前回ほぼ同様の構成で前任者が作成したものがあったため、作業時間は短かく収めることができました。</p>
+                    </div>
+                  </div><!-- END portfolio-content__body -->
+                </div><!-- END portfolio-content -->
+                <div class="portfolio-content">
+                  <div class="portfolio-content__image">
+                    <img src="../images/pc_portfolio/pc_portfolio-6.png" alt="" class="pc-portfolio">
+                    <img src="../images/sp_portfolio/sp_portfolio-6.png" alt="" class="sp-portfolio">
+                  </div><!-- END portfolio-content__image -->
+                  <div class="portfolio-content__body">
+                    <h2 class="portfolio-content__title">メディアサイト</h2>
+                    <div class="portfolio-content__desc">
+                      <p class="portfolio-content__text"><span>URL：</span>事業撤退につきURL廃止</p>
+                      <p class="portfolio-content__text"><span>担当範囲：</span>ヒアリング・打合せ<br>ページのデザイン（AdobeXD）<br>コーディング（HTML / CSS(Sass) / JS / jQuery）</p>
+                      <p class="portfolio-content__text"><span>制作時間：</span>65時間<br>（打合せ：15時間 / デザイン：10時間 / コーディング：40時間）</p>
+                      <p class="portfolio-content__text"><span>制作概要：</span>デザインは参考になるサイトをいくつか用意しイメージを合わせていったため、打合せ時間に工数をさきました。</p>
+                    </div>
+                  </div><!-- END portfolio-content__body -->
+                </div><!-- END portfolio-content -->
+              </div><!-- END #portfolio-contents -->
+            </div><!-- END portfolio__body -->
+
             <div id="contact-btn">
               <label for="contact-modal">話を聞いてみたい</label>
               <input type="checkbox" id="contact-modal">
             </div><!-- END contact-btn -->
-          </section><!-- END profile -->
+          </section><!-- END portfolio -->
         </div><!-- END transition-inner -->
       </div><!-- END contents-body -->
     </div>

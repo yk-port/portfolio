@@ -17,4 +17,18 @@ $(function() {
     const index = $(this).index();
     $('#profile-contents .panel').eq(index).addClass('is-show');
   });
+
+  // slickを使ったスライダー
+  $('#portfolio-contents').slick({
+    infinite: true,
+    arrows: false,
+    fade: true,
+    draggable: false,
+  });
+  $('#portfolio-menu').slick({
+    infinite: true,
+    slidesToShow: 6,
+    focusOnSelect: true,
+    asNavFor: '#portfolio-contents',
+  });
 });

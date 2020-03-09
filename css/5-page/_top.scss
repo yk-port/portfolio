@@ -75,10 +75,9 @@
     width: 70%;
     height: 180px;
     display: flex;
-    justify-content: space-between;
   }
   &__description {
-    width: 320px;
+    width: 295px;
     font-size: 1.5rem;
     letter-spacing: 0.3em;
     line-height: 2.3rem;
@@ -90,7 +89,7 @@
   }
   &__image {
     position: relative;
-    width: calc(100% - 300px);
+    width: calc(100% - 335px);
     height: auto;
     background: url('./images/own-pic.jpg') no-repeat center center / cover;
     &::before {
