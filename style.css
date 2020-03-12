@@ -660,7 +660,7 @@ body .container {
   transform: translate(-50%, 0);
 }
 
-#contact-btn label {
+#contact-btn .contact-form {
   position: relative;
   display: block;
   width: 240px;
@@ -677,7 +677,7 @@ body .container {
   cursor: pointer;
 }
 
-#contact-btn label::after {
+#contact-btn .contact-form::after {
   content: '';
   position: absolute;
   top: -100px;
@@ -691,12 +691,14 @@ body .container {
   animation-iteration-count: infinite;
 }
 
-#contact-btn label a {
-  color: #FFFFFF;
+#contact-btn .contact-sns {
+  margin-top: 16px;
+  text-align: center;
 }
 
-#contact-btn input {
-  display: none;
+#contact-btn .contact-sns a {
+  padding: 0 8px;
+  color: #2C334B;
 }
 
 #top #contact-btn {
@@ -1096,7 +1098,7 @@ body .container {
   position: relative;
   width: calc(100% - 335px);
   height: auto;
-  background: url("./images/own-pic.jpg") no-repeat center center/cover;
+  background: url("./images/top_profile.png") no-repeat center center/cover;
 }
 
 .top__image::before {

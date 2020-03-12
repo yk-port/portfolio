@@ -3,7 +3,7 @@
   top: calc(50% + 160px);
   left: 50%;
   transform: translate(-50%, 0);
-  label {
+  .contact-form {
     position: relative;
     display: block;
     width: 240px;
@@ -31,12 +31,14 @@
       animation-timing-function: ease-in-out;
       animation-iteration-count: infinite;
     }
-    a {
-      color: $white;
-    }
   }
-  input {
-    display: none;
+  .contact-sns {
+    margin-top: 16px;
+    text-align: center;
+    a {
+      padding: 0 8px;
+      color: $blue;
+    }
   }
 }
 
