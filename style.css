@@ -691,6 +691,10 @@ body .container {
   animation-iteration-count: infinite;
 }
 
+#contact-btn label a {
+  color: #FFFFFF;
+}
+
 #contact-btn input {
   display: none;
 }
@@ -829,6 +833,8 @@ body .container {
 #profile-contents .panel__title {
   position: relative;
   font-size: 1.8rem;
+  line-height: 1.5em;
+  font-weight: 700;
   margin-bottom: 24px;
   display: inline-block;
 }
