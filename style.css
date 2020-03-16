@@ -1098,7 +1098,7 @@ body .container {
   position: relative;
   width: calc(100% - 335px);
   height: auto;
-  background: url("./images/top_profile.png") no-repeat center center/cover;
+  background: url("./images/own-pic.jpg") no-repeat center center/cover;
 }
 
 .top__image::before {
