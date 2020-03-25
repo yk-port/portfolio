@@ -6,12 +6,17 @@ $(function() {
     let skillBodyWidth = Math.round($(this).width());
     let endPointSkillLast = skillBodyWidth - 180;
 
+    // 一番右までスクロールしきったら、右方向矢印を消して左方向矢印のみにする
     if (skillLastPos === endPointSkillLast) {
-      console.log('矢印は左向きのみ');
+      $('.scroll-arrow--right').css('visibility', 'hidden');
+      $('.scroll-arrow--left').css('visibility', 'visible');
+    // 一番左までスクロールしきったら、左方向矢印を消して右方向矢印のみにする
     } else if (skillFirstPos === 0) {
-      console.log('矢印は右向きのみ');
+      $('.scroll-arrow--right').css('visibility', 'visible');
+      $('.scroll-arrow--left').css('visibility', 'hidden');
     } else {
-      console.log('矢印両方');
+      $('.scroll-arrow--right').css('visibility', 'visible');
+      $('.scroll-arrow--left').css('visibility', 'visible');
     }
   });
 

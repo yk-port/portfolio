@@ -4,6 +4,22 @@
     top: 20%;
     left: 10%;
   }
+  &__info {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.6rem;
+    span {
+      padding: 0 8px;
+    }
+    .scroll-arrow {
+      visibility: hidden;
+      &--right {
+        visibility: visible;
+      }
+    }
+  }
   &__body {
     position: absolute;
     top: 50%;
