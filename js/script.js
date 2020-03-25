@@ -1,4 +1,20 @@
 $(function() {
+  // scroll interaction
+  $('.skill__body').scroll(function() {
+    let skillFirstPos = $('.grid-wrap__content:first').position().left;
+    let skillLastPos = $('.grid-wrap__content:last').position().left;
+    let skillBodyWidth = Math.round($(this).width());
+    let endPointSkillLast = skillBodyWidth - 180;
+
+    if (skillLastPos === endPointSkillLast) {
+      console.log('矢印は左向きのみ');
+    } else if (skillFirstPos === 0) {
+      console.log('矢印は右向きのみ');
+    } else {
+      console.log('矢印両方');
+    }
+  });
+
   // navクリック時のページ遷移のアニメーション制御
   $('#nav .menu a').on('click', function(e) {
     e.preventDefault();
